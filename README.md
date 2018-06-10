@@ -4,9 +4,17 @@ Make sure, you have `docker` installed.
 $ ./install.sh
 ```
 
-# Run
+# Run interactive Haskell
 ```
-$ ./run.sh
+$ ./run.sh ghci
+Prelude> "Hello Alexar!"
+"Hello Alexar!"
+```
+
+# Compile Haskell
+```
+$ echo 'main = putStrLn "Hello Alexar!"' > hello.hs
+$ ./run.sh ghc -o hello hello.hs
 ```
 
 # Get started
